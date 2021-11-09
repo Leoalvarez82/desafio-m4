@@ -5,7 +5,7 @@ function footerComponent(el) {
     <footer class="footer">
       <div class="footer__logo-container">
         <a href="./index.html" class="footer__link-home">
-          <img src="./images/logopn.png" alt="Logo" class="footer__logo" />
+          <img src="./images/LOGOPN.png" alt="Logo" class="footer__logo" />
         </a>
       </div>
       <div class="footer__contact-social-media">
