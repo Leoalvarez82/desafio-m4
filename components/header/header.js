@@ -18,7 +18,7 @@ function headerComponent(el) {
   const headerEl = document.createElement("div");
   headerEl.innerHTML = `<header class="header">
   <a href="./index.html" class="header__link-home">
-    <img src="./images/logo.png" alt="Logo" class="header__logo" />
+    <img src="./images/LOGOpn.png" alt="Logo" class="header__logo" />
   </a>
   <div class="header__desktop-menu">
     <nav class="header__desktop-nav">
