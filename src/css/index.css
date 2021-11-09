@@ -1,0 +1,178 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Poppins:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.container-header-welcome {
+  height: 100vh;
+  background-image: url("../../images//fondo.jpg");
+  background-size: cover;
+  background-position: 50%;
+}
+@media (min-width: 769px) {
+  .container-header-welcome {
+    height: 90vh;
+  }
+}
+.section-welcome {
+  color: white;
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/* shadow para darle sombra  y resaltar las letras */
+.section-welcome__title {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 54px;
+  text-shadow: 0px 2px 4px rgb(0 0 10);
+}
+
+.subtitle {
+  font-size: 39px;
+}
+.section-about-me {
+  height: 100vh;
+  background-color: #141414;
+  color: white;
+}
+@media (min-width: 769px) {
+  .section-about-me {
+    height: 90vh;
+    background-color: #ffffff;
+    color: black;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding: 40px;
+  }
+}
+.section-about-me__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 55px 32px;
+  height: 100vh;
+}
+.section-about-me__title {
+  margin-bottom: 46px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 39px;
+  letter-spacing: -2px;
+  text-align: center;
+}
+.section-about-me__paragraph {
+  font-family: "Poppins";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+@media (min-width: 769px) {
+}
+.section-about-me__container-img {
+  display: none;
+}
+@media (min-width: 769px) {
+  .section-about-me__container-img {
+    display: inherit;
+  }
+}
+.section-about-me__img {
+  /* border-radius: 55%; lo hace redondo */
+  box-shadow: 5px 5px 10px 1px rgb(2 3 5 / 70%);
+  height: 480px;
+  width: 380px;
+}
+/* Services */
+
+.section-services {
+  background-color: #e8e8e8;
+  padding: 70px 30px;
+}
+
+.section-services__container-title {
+  margin-bottom: 50px;
+}
+
+.section-services__title {
+  text-align: center;
+  margin: 0;
+  font-size: 32px;
+  font-family: "Montserrat", sans-serif;
+}
+@media (min-width: 769px) {
+  .section-services__title {
+    font-size: 48px;
+  }
+}
+
+.section-services__container-card {
+  margin: 0 auto;
+  max-width: 500px;
+}
+@media (min-width: 769px) {
+  .section-services__container-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 6%;
+    max-width: 100%;
+  }
+}
+
+.section-services__card {
+  margin-bottom: 50px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 12px -5px rgb(0 0 0 / 90%);
+}
+
+.section-services__card:hover {
+  box-shadow: 12px 12px 32px -5px rgb(0 0 0 / 30%);
+}
+
+.section-services__card-img {
+  width: 100%;
+  height: 130px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 10px 10px 0 0;
+}
+
+.section-services__subcontainer {
+  padding: 10px;
+  display: grid;
+  grid-template-rows: 90px 100px;
+  gap: 10px;
+}
+
+.section-services__card-title {
+  font-size: 24px;
+  margin: 18px 0;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+}
+
+.section-services__card-description {
+  text-align: center;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  margin: 0;
+  overflow: auto; /* Para hacer la ruedita, en texto que supera la caja */
+}

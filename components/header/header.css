@@ -1,0 +1,82 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+}
+.header__logo {
+  width: 100px;
+  height: 84px;
+}
+.header__desktop-menu {
+  display: none;
+}
+/* desktop hereda comportamiento ya que estaba none */
+@media (min-width: 769px) {
+  .header__desktop-menu {
+    display: inherit;
+  }
+}
+.header__desktop-nav {
+  display: flex;
+  gap: 20px;
+}
+.header__desktop-link {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: "Poppins", sans-serif;
+}
+.header__burger-menu {
+  display: initial;
+}
+
+@media (min-width: 769px) {
+  .header__burger-menu {
+    display: none;
+  }
+}
+.header__burger-img {
+  width: 36px;
+  height: 32px;
+}
+/* posicion abs es que ocupe todo el espacio, opacity si quiero que sea mas claro*/
+.burger__window {
+  display: none;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: #161616;
+}
+.burger-window__close-container {
+  text-align: right;
+  padding: 36px;
+  margin-bottom: 55px;
+}
+.burger-window__nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 58px;
+}
+.burger-window__link {
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  text-decoration: none;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: -1px;
+  text-align: center;
+}

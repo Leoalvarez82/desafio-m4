@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Home | Leo#</title>
+    <!-- Component Header-->
+     <script defer src="./components/header/header.js"></script> 
+    <link rel="stylesheet" href="./components/header/header.css" /> 
+
+     <!--Component Contact -->
+    <script defer src="./components/form/form.js"></script>
+    <link rel="stylesheet" href="./components/form/form.css" />
+
+    <!--Component Footer -->
+    <script defer src="./components/footer/footer.js"></script>
+    <link rel="stylesheet" href="./components/footer/footer.css" /> 
+
+     <!-- JS y CSS index -->
+    <link rel="stylesheet" href="./src/css/index.css" />
+    <script defer src="./src/js/index.js"></script> 
+  </head>
+  <body>
+    <!-- componente header -->
+    <div class="container-header-welcome">
+      <section class="section-header">
+       
+      </section>
+<!-- welcome lo agrego desde contenfull -->
+      <section class="section-welcome">
+        <h1 class="section-welcome__title"></h1>
+        <h2 class="section-welcome__title subtitle"></h2>
+      </section>
+    </div> 
+<!-- about me tambien contenfull -->
+    <section class="section-about-me">
+      <div class="section-about-me__content">
+        <h2 class="section-about-me__title"></h2>
+        <p class="section-about-me__paragraph"></p>
+      </div>
+
+      <div class="section-about-me__container-img">
+        <img src="" alt="" class="section-about-me__img" />
+      </div>
+    </section>
+<!-- servicios contenfull -->
+    <section class="section-services">
+      <div class="section-services__container-title">
+        <h2 class="section-services__title">Mis servicios</h2>
+      </div>
+
+      <div class="section-services__container-card"></div>
+
+      <template id="section-services__template">
+        <div class="section-services__card">
+          <img src="" alt="" class="section-services__card-img" />
+          <div class="section-services__subcontainer">
+            <h4 class="section-services__card-title"></h4>
+            <p class="section-services__card-description"></p>
+          </div>
+        </div>
+      </template>
+    </section>
+<!-- componentes form y footer -->
+  <section class="section-contact"></section>
+    <section class="section-footer"></section> 
+  </body>
+</html>

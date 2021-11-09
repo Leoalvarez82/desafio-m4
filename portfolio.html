@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+
+    <!-- Header Component -->
+    <script defer src="./components/header/header.js"></script>
+    <link rel="stylesheet" href="./components/header/header.css" />
+
+    <!-- Footer Component -->
+    <script defer src="./components/footer/footer.js"></script>
+    <link rel="stylesheet" href="./components/footer/footer.css" />
+
+    <!-- Portfolio JS y CSS -->
+    <script defer src="./src/js/portfolio.js"></script>
+    <link rel="stylesheet" href="./src/css/portfolio.css" />
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="upper-container">
+        <section class="section-header"></section>
+        <div class="upper-container__container-title">
+          <h1 class="upper-container__title">Portfolio</h1>
+        </div>
+      </div>
+
+      <section class="section-portfolio">
+        <div class="section-portfolio__container-card"></div>
+
+        <template id="section-portfolio__template">
+          <div class="section-portfolio__card">
+            <img src="" alt="" class="section-portfolio__card-img" />
+            <div class="section-portfolio__subcontainer">
+              <h4 class="section-portfolio__card-title"></h4>
+              <p class="section-portfolio__card-description"></p>
+              <a href="" class="section-portfolio__card-link" target="_blank"
+                >Ver más</a
+              >
+            </div>
+          </div>
+        </template>
+      </section>
+
+      <section class="section-footer"></section>
+    </div>
+  </body>
+</html>

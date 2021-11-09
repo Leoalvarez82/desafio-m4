@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Poppins:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.upper-container {
+  background-color: black;
+  color: white;
+}
+
+@media (min-width: 769px) {
+  .upper-container {
+    background: linear-gradient(
+      107.17deg,
+      #494095 29.35%,
+      rgb(0 210 45 / 80%) 78.73%
+    );
+
+    background-size: 100%;
+  }
+}
+
+@media (min-width: 769px) {
+  .form {
+    background-color: inherit;
+  }
+}
+
+.header__desktop-link:hover {
+  color: black;
+}
